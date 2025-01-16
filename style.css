@@ -31,7 +31,7 @@ body {
   font-size: 5vw;
   text-transform: uppercase;
   font-weight: 500;
-  animation-name: loaderAnime;
+  opacity: 0;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }

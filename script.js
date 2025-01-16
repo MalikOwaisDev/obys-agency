@@ -7,7 +7,7 @@ tl.from('.line h1', {
   delay: 0.5,
 });
 
-tl.from('.line h2, #line-part1', {
+tl.from('#line-part1', {
   opacity: 0,
   onStart: () => {
     let h5Timer = document.querySelector('#line-part1 h5');
@@ -20,6 +20,10 @@ tl.from('.line h2, #line-part1', {
       }
     }, 35);
   },
+});
+tl.to('.line h2', {
+  opacity: 1,
+  animationName: 'loaderAnime',
 });
 tl.to('#loader', {
   opacity: 0,
