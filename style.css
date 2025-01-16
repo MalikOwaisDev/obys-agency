@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plain Light';
+  color: #fff;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  background-color: #030303;
+  position: fixed;
+  z-index: 999;
+  padding: 25vh 10vw;
+}
+.line {
+  overflow: hidden;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+}
+.line h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  animation-name: loaderAnime;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+#line-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2vw;
+}
+#line-part1 h5,
+#line-part1 h6 {
+  font-size: 3vw;
+  font-family: 'Silk Serif';
+  font-weight: 100;
+}
+#line-part1 h5 {
+  text-align: right;
+  width: 5vw;
+}
+.line h1 {
+  font-size: 6.5vw;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@keyframes loaderAnime {
+  0% {
+    font-family: 'plain light';
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+  48% {
+    font-family: 'plain light';
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+
+  50% {
+    font-family: 'silk serif';
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+  }
+
+  100% {
+    font-family: 'silk serif';
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 0;
+  }
+}
+
+#main {
+  position: relative;
+  background-color: #030303;
+}
+
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #151515;
+  /* background-color: #000; */
+}

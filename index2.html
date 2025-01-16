@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        .iframecontainer {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .iframecontainer .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 42.5%;
+            right: 17px;
+            width: 38px;
+            height: 40px;
+            background: #606060;
+            z-index: 1;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .iframecontainer .box i {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .iframecontent {
+            top: 10px;
+            left: 10px;
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        @media screen and (max-width: 767px) {
+
+            .iframecontainer {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow-x: hidden;
+
+            }
+
+            .iframecontent {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+            }
+
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 767px) {
+            .iframecontainer {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow-x: hidden;
+
+            }
+
+            .iframecontent {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="iframecontainer">
+        <a href="https://car.spiritualityinfo.com/template-3/">
+            <div class="box">
+                <i class="ri-information-line"></i>
+            </div>
+        </a>
+        <iframe src="https://rifetheme.com/starter-3/" scrolling="yes" class="iframecontent"></iframe>
+    </div>
+
+</body>
+
+</html>
