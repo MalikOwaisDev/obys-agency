@@ -9,8 +9,18 @@ html,
 body {
   width: 100%;
   height: 100%;
+  cursor: none;
 }
 
+#cursor {
+  height: 2.6vw;
+  width: 2.6vw;
+  border: 1px solid #ffffffbe;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
 #loader {
   width: 100%;
   height: 100%;
@@ -101,4 +111,46 @@ body {
   height: 100vh;
   background-color: #151515;
   /* background-color: #000; */
+}
+
+#page1 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.6vw 5.5vw;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+#nav-part2 h4 {
+  font-size: 01vw;
+  font-weight: 500;
+}
+.hero {
+  width: 72%;
+  margin-left: 28%;
+  height: fit-content;
+  overflow: hidden;
+}
+.hero:nth-child(2) {
+  margin-top: 18.5vh;
+}
+.hero h1 {
+  font-size: 7.4vw;
+  text-transform: uppercase;
+  line-height: 7.4vw;
+}
+#hero3 span {
+  z-index: 999;
+  font-weight: 500;
+}
+
+#hero3 span:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
 }
