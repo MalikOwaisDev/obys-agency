@@ -1,0 +1,14 @@
+{
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": false,
+  "editor.formatOnSave": true,
+  "html.format.indentInnerHtml": true,
+  "editor.mouseWheelZoom": true,
+  "files.trimTrailingWhitespace": true,
+  "prettier.singleAttributePerLine": true,
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
